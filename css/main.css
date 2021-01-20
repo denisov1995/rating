@@ -1,0 +1,40 @@
+.block {
+  width: 64px;
+  height: 66px;
+  background: none;
+  margin-right: 10px;
+  border: 3px solid aqua;
+  opacity: 1;
+}
+
+.wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400px;
+  position: relative;
+}
+
+.block:hover ~ .block {
+  background: aqua;
+  margin-right: 10px;
+  z-index: 10;
+}
+
+.block:hover {
+  background: aqua;
+  margin-right: 10px;
+  z-index: 10;
+}
+
+.block-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+
